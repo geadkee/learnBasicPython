@@ -3,7 +3,8 @@
 #
 
 # define a basic function
-
+def function1():
+    print("A basic function.");
 
 # function that takes arguments
 
@@ -17,3 +18,4 @@
 #function with variable number of arguments
 
 
+function1();
