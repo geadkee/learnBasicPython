@@ -27,7 +27,7 @@ def function4(p, q = 1):
         result = result + q;
     return result;
 
-def function5(p, q = 1):
+def power(p, q = 1):
     result = 1;
     for i in range(q):
         result = result * p;
@@ -35,11 +35,11 @@ def function5(p, q = 1):
 
 
 #function with variable number of arguments
-def function6(*arg):
+def multiAdd(arg1, *arg):
     result = 0;
     for i in arg:
         result = result + i;
-    return result;
+    return print(arg1, "  ", result);
 
 # function1();
 # print(function1());
@@ -52,6 +52,7 @@ def function6(*arg):
 print(function4(4));
 print(function4(4, 5));
 
-print(function5(4, 5));
+print(power(4, 5));
+print(power(q=2, p=3));
 
-print(function6(4, 5, 10, 4, 10));
+print(multiAdd(4, 5, 10, 4, 10));
