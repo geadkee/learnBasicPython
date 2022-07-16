@@ -37,7 +37,7 @@ class Bike(Vehicles):
         self.cylinder = 2
 
     def Drive(self, distance, time):    #derive a function from it's parent class
-        super.Drive(distance, time)
+        super().Drive(distance, time)
         self.speed = distance/time;
         return print("Riding my ", self.enginetype, self.bodystyle, " at speed ", self.speed, "meter/min")
 
@@ -52,6 +52,7 @@ print(bike1.hasSideCar)
 
 car1.Drive(60, 10)
 car2.Drive(120, 10)
+bike1.Drive(180, 20)
 
 
 # def main():
