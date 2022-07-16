@@ -4,12 +4,12 @@
 
 class Vehicles():
     def __init__(self, bodystyle):
-        self.bodystyle = bodystyle;
+        self.bodystyle = bodystyle;     #"Vehicle()" class has "bodystyle" property
     wheels = 3;
 
 class Car(Vehicles):
     def __init__(self, enginetype):
-        super().__init__("Car")
+        super().__init__("Car")         #"super().__init__()" is to initalise the "bodystyle" property in the Vehicle() class. 
         self.wheel = 4
         self.doors = 4
         self.cylinder = 4
@@ -17,7 +17,7 @@ class Car(Vehicles):
 
 class Bike(Vehicles):
     def __init__(self, enginetype, hasSideCar):
-        super().__init__("Bike")
+        super().__init__("Bike")        #"super().__init__()" is to initalise the "bodystyle" property in the Vehicle() class. 
         if(hasSideCar):
             self.wheel = 3
         else:
