@@ -1,9 +1,25 @@
-def isPalindrome():
-    x = input("Enter ur palindrome: ")
-    if len(x)%2 == 0:
-        # y = x.slice
-        print(y)
-    else:
-        print("else")
+def isPalindrome(x):
+    
+    xy = ""
+    for y in x:
+        if y.isalnum():
+            xy += y
 
-isPalindrome()
+            if xy == xy[::-1]:
+                return True
+            else:
+                return False
+
+run = True
+
+while (run):
+    x = input("Enter ur palindrome or 'exit' to exit: ").lower()
+
+    if x == "exit":
+        run = False
+        break
+
+    isPalindrome(x)
+
+
+# print(isPalindrome());
