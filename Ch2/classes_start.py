@@ -13,7 +13,7 @@ class Vehicles():
         self.mode = "driving"
 
 class Car(Vehicles):
-    def __init__(self, enginetype):
+    def __init__(self, enginetype):     #"super()" to access methods and properties within the parent class of the class where super() is being called from
         super().__init__("Car")         #"super().__init__()" is to initalise the "bodystyle" property in the Vehicle() class. 
         self.wheel = 4
         self.doors = 4
@@ -26,7 +26,8 @@ class Car(Vehicles):
         return print("Driving my ", self.enginetype, self.bodystyle ," at speed ", self.speed, "meter/min")
 
 class Bike(Vehicles):
-    def __init__(self, enginetype, hasSideCar):
+    def __init__(self, enginetype, hasSideCar): 
+        #"super()" to access methods and properties within the parent class of the class where super() is being called from
         super().__init__("Bike")        #"super().__init__()" is to initalise the "bodystyle" property in the Vehicle() class. 
         if(hasSideCar):
             self.wheel = 3

@@ -19,7 +19,4 @@ while (run):
         run = False
         break
 
-    isPalindrome(x)
-
-
-# print(isPalindrome());
+    print(isPalindrome(x));
