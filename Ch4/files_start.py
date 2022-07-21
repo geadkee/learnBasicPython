@@ -11,11 +11,10 @@ def main():
 
   # write some lines of data to the file
   for i in range(10):
-    # myfile.write("Lane ", i);
-    print("Lane ", i);
+    myfile.write("Lane "+ str(i)+ "\n");
   
   # close the file when done
-
+  myfile.close()
   
   # Open the file back up and read the contents
 
