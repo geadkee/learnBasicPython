@@ -10,7 +10,9 @@ def main():
 
 
   # write some lines of data to the file
-
+  for i in range(10):
+    # myfile.write("Lane ", i);
+    print("Lane ", i);
   
   # close the file when done
 
