@@ -29,6 +29,10 @@ def main():
 
 
     # more fine-grained control over ZIP files
+    with zipfile.ZipFile("anotherZipFile.zip", "w") as newZip:
+      newZip.write("newfile.txt")
+      newZip.write("textfile.txt.bak")
+      newZip.write("shell_start.py")
 
       
 if __name__ == "__main__":
