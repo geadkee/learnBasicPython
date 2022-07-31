@@ -1,9 +1,15 @@
+import os;
+from os import  path ;
+
+
+
 def main():
 
     countFile = ("challenge.txt", "w+")
 
+    path1, path2 = path.split(path.realpath("challenge.txt"))
 
-    countFile.write("Byte count: " + )
+    countFile.write("Byte count: ")
 
 
 
