@@ -10,6 +10,10 @@ def main():
     path1, path2 = path.split(path.realpath("challenge.txt"))
 
     countFile.write("Byte count: ")
+    countFile.write("Total listing: \n")
+    countFile.write("-------------\n")
+    for files in os.listdir():
+        countFile.write(files + "\n")
 
 
 
